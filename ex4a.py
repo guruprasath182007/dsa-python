@@ -12,7 +12,7 @@ class Queue:
     def peek(self):
         if self.is_empty():
             raise IndexError("Queue is empty")
-        return self.queue.pop(0)
+        return self.queue[0]
     def size(self):
         return len(self.queue)
 q=Queue()
@@ -24,3 +24,4 @@ print("dequeued elements:",q.dequeue())
 print("Queue after dequeuing an element:",q.queue)            
 print("Front element:",q.peek())
 print("Queue size:",q.size())
+
